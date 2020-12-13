@@ -1,0 +1,130 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inial-scale=1">
+	<meta name="keyword" content="Laptop Accessories, charger, lapdesk, Laptop batteries, ">
+	<link href="slide_show.css" rel="stylesheet" type="text/css" >
+	<title> Homepage </title>
+</head>
+<body>
+	
+	<header>
+		<h1>
+		 <img class="logo" src="logo.png" alt="logo" >
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="homepage.html">Homepage</a></li>
+		<li><a href="product.html">Products</a></li>
+		<li><a href="about.html">About Company</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="reviews.html">Reviews</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="reg.html">New User</a>
+
+	</ul>
+</nav>
+	</header>
+		
+			<form >
+					<input class="search" type="text" placeholder="Search.." name="search">
+					<button  style=" background-color: white; border: 2px solid black; width:50px" type="submit"><i class="fa fa-search"></i><b>X</b></button>
+				</Form>
+			
+		
+		<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<div class="slideshow-container">
+	<div class="mySlides fade">
+		<img src="https://m.media-amazon.com/images/I/81YwTKS0UQL._AC_UL320_.jpg">
+		<article>
+			<p><strong>Amkette Ergo View Laptop Stand with 7 Adjustment Levels for laptops</strong></p>
+			<p><strong>price: $234</strong></p>
+			<p>&#x2714; Ergonomic Design</p>
+			<p>&#x2714; Adjustable Levels</p>
+			<p>&#x2714; Solid Grip on wooden and Glass surface</p>
+			<p>&#x2714;Portable Design</p>
+			<p>&#x2714; Suitable for all Laptop sizes</p>
+			<button><a href="buy.html"><strong>Buy Now</strong></a></button>
+		</article>
+	</div>
+
+	<div class="mySlides fade">
+		<img src="https://m.media-amazon.com/images/I/61vniPo8FaL._AC_UL320_.jpg" >
+		<article>
+			<p><strong>Zinq Technologies Cool Slate Five Fan Cooling Pad for Notebook/Laptop with Dual USB Port</strong></p>
+			<p><strong>price: $324</strong></p>
+			<p>&#x2714;Completed with the Tucano Anti-Slip System</p>
+			<p>&#x2714;Padded for all-around protection</p>
+			<p>&#x2714;Dual zippers for easy opening</p>
+			<p>&#x2714;Rugged 4mm neoprene construction</p>
+			<p>&#x2714;Perfect finishing with special flat-lock stitching to hold the extra slim effect</p>
+			<button><a href="buy.html"><strong>Buy</strong></a></button>
+		</article>
+	</div>
+
+	<div class="mySlides fade">
+		<img src="https://m.media-amazon.com/images/I/71WoQJLPeGL._AC_UL320_.jpg" >
+		<article>
+			<p><strong>AirCase Laptop Bag Sleeve Case Cover for 14-Inch Laptop MacBook, Protective</strong></p>
+			<p><strong>price: $94</strong></p>
+			<p>&#x2714;Strong compatibility laptop cooling pad</p>
+			<p>&#x2714;Superior Cooling, Whisper Quiet</p>
+			<p>&#x2714;Double Rotatable Switch, Eye-catching Red LED lights</p>
+			<p>&#x2714;Ergonomic Comfort</p>
+			<p>&#x2714;Extra USB Port</p>
+			<button><a href="buy.html"><strong>Buy</strong></a></button>
+		</article>
+	</div>
+	
+<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<footer >
+	
+		<p ><b> &#9679;V-JAS laptops accessories</b>&ensp;&#9679;57 Down Rown&ensp;&#9679;Toronto &ensp; &#9679; MH254J
+	 </p>
+	 	
+</footer>
+</body>
+</html>

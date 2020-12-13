@@ -1,0 +1,45 @@
+@charset "utf-8"
+div{
+	display: inline;
+	
+}
+
+button{
+background-color: #F78702;
+  font: normal small-caps bold 1.2em/0em Roman, Verdana, geneva, arial, sans-serif;
+  width:250px;
+  height:30px;
+   border: 2px solid black;
+  border-radius: 40%;
+}
+
+button a {
+  color: black;
+  text-decoration: none;
+}
+
+.one{
+	width:90%;
+	height: auto;
+	margin: auto;
+	padding: 2px;
+	box-sizing: border-box;
+	font:normal 1em/1em Verdana, Geneva, sans-serif;
+}
+.two{
+	width:140%;
+	height: auto;
+	margin: auto;
+	padding: 2px;
+	box-sizing: border-box;
+	font:normal 1em/1em Verdana, Geneva, sans-serif;
+}
+.three{
+	width:90%;
+	height: auto;
+	margin-left: auto;
+	padding: 2px;
+	box-sizing: border-box;
+	font:normal 1em/1em Verdana, Geneva, sans-serif;
+	
+}
